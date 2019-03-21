@@ -20,7 +20,7 @@ properties:
         * __Sleep__: This is the state after 31 days of being in the 'customer_only' state.
         The customer is not allowed to create new loyalty points transactions
 
-  expiration_date:
+  loyalty_points_expiration_date:
     type: string
     format: date
     description: Date when the loyalty points for this customer will expire.
