@@ -22,5 +22,5 @@ properties:
 
   loyalty_points_expiration_date:
     type: string
-    format: date
+    format: datetime
     description: Date when the loyalty points for this customer will expire.
