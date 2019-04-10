@@ -9,6 +9,7 @@ required:
   - price
   - in_bundle
   - is_incoming
+  - throttled
 properties:
   traffic_type:
     type: string
@@ -47,4 +48,8 @@ properties:
   is_incoming:
     description: indicates if the call, data session or sms was incoming or not.
     type: boolean
-
+  throttled:
+    description: >
+      Indicates if this CDR was generated while throttling was active
+    type: boolean
+    default: false
