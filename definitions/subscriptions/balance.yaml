@@ -40,6 +40,8 @@ properties:
         - remaining
         - used
         - type
+        - unlimited
+        - throttled
       properties:
         descriptions:
           $ref: '#/definitions/Descriptions'
@@ -80,3 +82,13 @@ properties:
             - data
             - voice
             - value
+        unlimited:
+          description: >
+            Indicates if a bundle is unlimited
+          type: boolean
+          default: false
+        throttled:
+          description: >
+            Indicates if throttling is active
+          type: boolean
+          default: false
